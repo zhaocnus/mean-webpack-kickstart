@@ -68,7 +68,7 @@ function run(newStringSnakeCase) {
 
   async.map(FILES, (file, cb) => {
     let filePath = path.join(BASE, file.dir);
-    let oldString = file.isCamelCase ? 'myMeaApp' : 'my-mea-app';
+    let oldString = file.isCamelCase ? 'myMeanApp' : 'my-mean-app';
     let newString = file.isCamelCase ? newStringCamelCase : newStringSnakeCase ;
 
     console.log(`-- Processing file : ${file.dir}`);
