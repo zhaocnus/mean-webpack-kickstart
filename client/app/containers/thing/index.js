@@ -1,6 +1,6 @@
-import { module as ngModule } from 'angular';
+import { module } from 'angular';
 
-export default ngModule('myApp.thing', [])
+export default module('myMeanApp.thing', [])
   .config($stateProvider => {
     $stateProvider
       .state('thing', {

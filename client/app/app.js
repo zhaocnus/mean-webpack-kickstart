@@ -1,4 +1,4 @@
-import angular from 'angular';
+import { module } from 'angular';
 
 // shared modules
 
@@ -10,7 +10,7 @@ import thingModule from './containers/thing';
 // app CSS
 import './app.scss';
 
-let app = angular.module('mpmApp', [
+let app = module('myMeanApp', [
     // library dependencies
     'ui.router',
     'ngCookies',

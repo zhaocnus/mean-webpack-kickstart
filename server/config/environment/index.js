@@ -20,7 +20,7 @@ const all = {
 
   // Secret for session, you will want to change this and make it an environment variable
   secrets: {
-    session: 'mean-app-secret'
+    session: 'app-secret'
   },
 
   // MongoDB connection options

@@ -20,7 +20,7 @@ require('./routes').default(app);
 
 // Start server
 function startServer() {
-  app.myApp = server.listen(config.port, config.ip, () => {
+  app.myMeanApp = server.listen(config.port, config.ip, () => {
     console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
   });
 }
