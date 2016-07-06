@@ -10,7 +10,8 @@
     "build:clean": "rimraf dist",
     "build:server": "babel ./server --out-dir dist/server",
     "build:client": "webpack --config ./webpack.prod.js --colors",
-    "prod:serve": "NODE_ENV=production nodemon dist/server"
+    "prod:serve": "NODE_ENV=production nodemon dist/server",
+    "rename": "node scripts/rename"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "angular-cookies": "^1.5.7",
     "angular-resource": "^1.5.7",
     "angular-ui-router": "^1.0.0-alpha.3",
+    "async": "^2.0.0-rc.6",
     "body-parser": "^1.15.1",
     "bootstrap-sass": "^3.3.6",
     "compression": "^1.6.1",
