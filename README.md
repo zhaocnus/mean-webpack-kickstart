@@ -1,9 +1,8 @@
-# Webpack + Express + Babel fullstack kickstart
+# Webpack + MEAN + Babel fullstack kickstart
 
-A simple fullstack starter using **webpack**, **express**, and **babel**.
+A simple fullstack starter using **webpack**, **express**, **babel**, **angular 1**, and **mongoose**.
 
-  * See [here](https://github.com/christianalfoni/webpack-express-boilerplate) for a extended kickstarter with **angular 1** and **mongoose**.
-
+  * See [here](https://github.com/christianalfoni/webpack-express-boilerplate) for simpler kickstarter without **angular 1** and **mongoose**.
 
 ### Reference/Inspiration
   * [webpack-express-boilerplate](https://github.com/christianalfoni/webpack-express-boilerplate)

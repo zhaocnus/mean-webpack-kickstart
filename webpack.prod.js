@@ -34,7 +34,7 @@ config.plugins = [
   }),
   new CopyWebpackPlugin([
     { from: 'favicon.ico', context: './client/'},
-    { from: 'public/**/*', context: './client/' }
+    { from: 'apple-touch-icon.png', context: './client/'}
   ], {
     ignore: [
       { glob: '**/.DS_Store' }
