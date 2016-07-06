@@ -7,12 +7,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // NO dest is required because we are using webpack-dev-middleware
 // No files are written to disk, it handle the files in memory
-const SRC = path.join(__dirname, 'client/app/');
+const SRC = path.join(__dirname, 'client/');
 
 const config = {
+  devtool: 'eval-source-map',
   entry: {
     vendor: path.join(SRC, 'vendor.js'),
-    app: path.join(SRC, 'bootstrap.js')
+    app: path.join(SRC, 'index.js')
   },
   output: {
     path: '/',
@@ -24,8 +25,7 @@ const config = {
         test: /\.js$/,
         loader: 'eslint',
         include: [
-          path.resolve(__dirname, 'client/app'),
-          path.resolve(__dirname, 'server/')
+          path.resolve(__dirname, 'client/app')
         ]
       }
     ],

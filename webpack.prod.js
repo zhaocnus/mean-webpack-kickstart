@@ -9,6 +9,8 @@ const DEST = path.join(__dirname, 'dist/client/');
 
 let config = require('./webpack.dev.js');
 
+config.devtool = null;
+
 config.output = {
   path: DEST,
   filename: '[name]-[hash].js'
